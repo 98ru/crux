@@ -1,0 +1,15 @@
+{
+  "name": "crux",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun start.ts"
+  },
+  "devDependencies": {
+    "@csstools/normalize.css": "^12.1.1",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,90 @@
+:root {
+  background-color: #85f9;
+}
+
+.goinrun {
+  body {
+    background-color: #fff9;
+    /* width: 300vw; */
+  }
+
+  h1 {
+    background-color: #0009;
+    color: #fff9;
+  }
+
+  main {
+    display: grid;
+    grid-template: "1fr  1fr  1fr";
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    grid-gap: 10px;
+    justify-items: center;
+    justify-content: normal;
+    align-items: center;
+    align-content: center;
+  }
+  main > div {
+    width: 95vw;
+    height: 90dvh;
+    background-color: #7099;
+    justify-self: center;
+    align-self: center;
+  }
+  video {
+    background-color: black;
+    block-size: inherit;
+    aspect-ratio: 16/9;
+  }
+}
+
+.gooutrun {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #fff7;
+    /* width: 300vw; */
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    font: 200 18px/26px Verdana;
+  }
+  h1 {
+    background-color: #0409;
+    color: #afa9;
+  }
+  main {
+    height: 95dvh;
+    width: 95dvw;
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 1dvmin;
+    margin-bottom: -1dvmin;
+    
+    grid-auto-flow: row dense;
+  }
+  main > div {
+    /* width: 97svw; */
+    /* height: 95svh; */
+    /* text-align: center; */
+    /* place-self: normal; */
+    background-color: #7529;
+  }
+  video {
+    background-color: black;
+    height: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+    margin: 0 auto;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .height100 {
+    height: 100vh;
+    box-sizing: border-box;
+  }
+}
