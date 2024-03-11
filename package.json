@@ -3,7 +3,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun start.ts"
+    "start": "bun start.ts",
+    "normalizecsscopy": "bun ./cli/copycssnormalize.js"
   },
   "devDependencies": {
     "@csstools/normalize.css": "^12.1.1",

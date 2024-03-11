@@ -18,13 +18,18 @@ body {
   display: inline-block;
   color: var(--color_font);
   background-color: rgb(var(--frame));
-  scroll-snap-type: both mandatory;
+  scroll-snap-type: both proximity;
+  /* scroll-snap-points-y: repeat(98svw);
+  scroll-snap-points-x: repeat(96dvh); */
   scroll-behavior: smooth;
 }
-h1 {
+a:-webkit-any-link {
+  color: white;
+}
+h1,
+h2 {
   background-color: #0409;
   color: #afa9;
-  /* scroll-snap-stop: always; */
 }
 main {
   display: grid;
@@ -37,11 +42,14 @@ main > section {
   width: 98svw;
   height: 96dvh;
   background-color: rgb(var(--plane));
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 footer {
   position: absolute;
   bottom: 0;
+}
+hgroup {
+  outline: 1px solid rgba(149, 215, 215, 0.686);
+  scroll-snap-align: center;
+  /* scroll-snap-stop: always; */
 }

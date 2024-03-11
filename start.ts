@@ -13,8 +13,10 @@ async function fetchq(req: Request) {
 	return res;
 }
 
-serve({
+const server = serve({
 	development: true,
 	port: PORT,
 	fetch: fetchq,
 });
+
+console.log(`Listening on ${server.url} with ID = ${server.id}`);
